@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-all">
+            <section class="header-main">
+                <nav class="header-nav">
+                    <ul class="header-ul">
+                        <li><a href="../pages/Ubicacion.html"><img src="../assets/img/ubicacion-nav.png" alt="">
+                                <p>ubicacion</p>
+                            </a></li>
+                        <li><a href="../pages/Recetas.html"><img src="../assets/img/libro.png" alt="">
+                                <p>recetas</p>
+                            </a></li>
+                        <a href="../index.html">
+                            <h1>Tio pelotte</h1>
+                        </a>
+                        <li><a href="../pages/Pastas.html"><img src="../assets/img/pastas-nav.png" alt="">
+                                <p>pastas</p>
+                            </a></li>
+                        <li><a href="../pages/Pedidos.html"><img src="../assets/img/pedidos.png" alt="">
+                                <p>carrito</p>
+                            </a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </header>
+    <main class="pedidos">
+        <h2>haz tu pedido</h2>
+        <section>
+            <div>
+                <ul>
+                    <form action="">
+                        <li><label for="nombre"><img src="../assets/img/persona.png" alt=""></label>
+                        <input ype="text" id="nombre" placeholder="ingresa tu nombre" required>
+                        </li>
+                        <li><label for="apellido"><img src="../assets/img/persona.png" alt=""></label>
+                        <input type="text" id="apellido" placeholder="ingresa tu apellido" required>
+                        </li>
+                        <li><label for="email"><img src="../assets/img/gmail.png" alt=""></label>
+                        <input type="email" id="email" placeholder="ingresa tu mail" required>
+                        </li>
+                        <li><label for="numero"><img src="../assets/img/whatsappCostado.png" alt=""></label>
+                            <input type="number" id="numero" placeholder="ingresa tu numero" required>
+                        </li>
+                        <li><label for="pedido"><img src="../assets/img/pedidos.png" alt=""></label>
+                            <input type="text" placeholder="haz tu pedido " required>
+                        </li>
+                        <li><h3>metodo de pago</h3></li>
+                        <li><label for="efectivo">Efectivo</label>
+                            <input type="radio" id="efectivo" name="metodo-de-pago" value="efectivo" checked>
+                        </li>
+                        <li><label for="mercado-pago">Mercado pago</label>
+                            <input type="radio" id="mercado-pago" name="metodo-de-pago" value="mercado-pago">
+                        </li>
+                        <li><label for="cuenta-dni">Cuenta-DNI</label>
+                            <input type="radio" id="cuenta-dni" name="metodo-de-pago" value="cuenta-dni">
+                        </li>
+                        </div>
+                        <div >
+                            <li><input class="pedidos-enviar" type="submit"></li>
+                        </div>
+                    </form>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <aside>
+        <section class="redesCostado">
+            <ul>
+                <li><a href="https://www.instagram.com/tiopelotte/" target="_blank">
+                        <img src="../assets/img/instagramCostado.png" alt="instagram">
+                    </a></li>
+                <li><a href="https://api.whatsapp.com/send/?phone=2215729474&text&type=phone_number&app_absent=0"
+                        target="_blank">
+                        <img src="../assets/img/whatsappCostado.png" alt="whatsapp">
+                    </a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100063991449642" target="_blank">
+                        <img src="../assets/img/facebookCostado.png" alt="facebook">
+                    </a></li>
+            </ul>
+        </section>
+    </aside>
+    <footer>
+        <section >
+            <div class="footer-class">
+                <ul>
+                    <li><h3>Redes</h3></li>
+                    <li><a href="https://www.instagram.com/tiopelotte/" target="_blank"><img src="../assets/img/instagramCostado.png" alt="">  @tiopelotte</a></li>
+                    <li><a href="https://api.whatsapp.com/send/?phone=2215729474&text&type=phone_number&app_absent=0" target="_blank"><img src="../assets/img/whatsappCostado.png" alt="">  2215 72-9474</a></li>
+                    <li><img src="../assets/img/gmail.png" alt="">  danytucan@gmail.com</li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100063991449642" target="_blank"><img src="../assets/img/facebookCostado.png" alt="">  facebook</a></li>
+                </ul>
+            </div>
+            <div class="footer-horarios">
+                <ul>
+                    <h3>horarios</h3>
+                    <p>Martes a Sábados de 9:00 a 12:30 17 a 21 hs </p>
+                    <p>Domingos 8:00 a 13 hs </p>
+                    <p>Lunes 29 abierto</p>
+                </ul>
+            </div>
+            <div class="footer-ubicacion">
+                <h3>Ubicacion</h3>
+                <p>Calle 197 entre 44 y 43 bis </p>
+                <p>Lisandro Olmos, Provincia de Buenos Aires</p>
+            </div>
+            <div class="footer-img">
+                <img src="../assets/img/negocio-removebg.png" alt="">
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
