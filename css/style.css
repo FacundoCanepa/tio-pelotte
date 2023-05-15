@@ -7,6 +7,9 @@ a{
     text-decoration: none;
     color: black;
 }
+ol{
+    list-style: none;
+}
 ul{
     list-style: none;
 }
@@ -369,4 +372,77 @@ main{
 }
 .carrito-pastas img{
     width: 7rem;
+}
+
+@media (max-width:1247px) {
+    .logoHora{
+    height: 60.7rem; 
+    }
+    .ruleta-fotos img{
+    height: 60.5rem;
+    }
+}
+@media (max-width:1024px) {
+    .header-nav ul{
+    justify-content: space-between;
+    padding:0rem 0.5rem 0rem 0.5rem; 
+    }
+    .logoHora{
+    height: 50.7rem; 
+    }
+    .ruleta-fotos img{
+    height: 50.5rem;
+    }
+    .eslogan img {
+        width: 15rem;
+        height: 15rem;
+    }
+    .nombres-esgolan {
+        font-size: 1.7rem;
+    }
+    .historia {
+        height: 40.2rem;
+    }
+    .historia p{
+        font-size: 1.6rem;
+    }
+    .historia-foto img {
+        height: 40rem;
+    }
+    .redesCostado img {
+        width: 3rem;
+        height: 3rem;
+    }
+    .recetas-nombres h2{
+        font-size: 4rem;
+    }
+    .recetas-nombres h3{
+        font-size: 3rem ;
+    }
+    .recetas-nombres li {
+        font-size: 1.4rem;
+    }
+    .recetas-produccion p{
+        font-size: 1.4rem;
+    }
+    .recetas-videos iframe { 
+        width: 30rem;
+        height: 25rem;
+    }
+    .pastas h4 { 
+        font-size: 7rem;
+    }
+    
+    .pastas-fotos img {
+        width: 15rem;
+        height: 15rem;
+    }
+    .pastas-pre li {
+        font-size: 1.4rem;
+        width:15rem ;
+    }
+    .pastas-carrito input { 
+        width: 10rem;
+    }
+
 }
