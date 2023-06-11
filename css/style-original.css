@@ -1,0 +1,889 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ol{
+    list-style: none;
+}
+ul{
+    list-style: none;
+}
+html{
+    font-size: 62.5%;
+}
+header{
+    background-color: #FBE6D4;
+    border-bottom: 2px solid black;
+    font-family: 'Island Moments', cursive;
+    position: sticky ;
+    top: 0;
+    z-index: 999;
+}
+header h1{
+    font-size:10rem;
+    font-weight: 600;
+    word-spacing: 2rem;
+}
+.checkbox , .icons {
+    display: none;
+}
+.header-nav h3 {
+    display: none;
+}
+.header-inicio p{
+    display: none;
+}
+.header-nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-ul li img{
+    width:7rem; 
+    padding-top: 1rem;
+}
+.header-all p{
+    font-size:3rem;
+    font-weight: 600;
+    text-align: center;
+}
+.header-all nav ul :hover{
+    transform: scale(1.1);
+}
+main{
+    background-color: #FECB89;
+
+}
+.logoHora{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    height: 85.7rem; 
+    border-bottom:2px solid black ;
+}
+.ruleta-fotos img{
+    width: 100%;
+    height: 85.5rem;
+    filter: opacity(0.9);
+    object-fit: cover;
+}
+.ruleta-fotos{
+    grid-column-start: 1;
+    grid-column-end: 5 ;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+.logo {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start:1;
+    grid-row-end: 5;
+    z-index: 1;
+}
+.logo img{
+    width: 95%;
+}
+.horarios{
+    width: 100%;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    z-index: 994;
+}
+.horarios p{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2.7rem;
+    font-weight: 600;
+}
+.galeria{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 15rem repeat(2,1fr);
+}
+.eslogan {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.galeria-fotos {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-self: center;
+    padding: 1rem 0rem 2.5rem 0rem;
+}
+.galeria-fotos2 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    align-self: center;
+    padding: 1rem 0rem 2.5rem 0rem;
+}
+.galeria-fotos ul {
+    display:flex;
+    justify-content:space-around ;
+    
+}
+.galeria-fotos2 ul {
+    display:flex;
+    justify-content:space-around ;
+}
+.galeria p {
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-top: 2rem;
+}
+.galeria img{
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 12rem;
+    border: solid 0.3rem black;
+    transition: 600ms;
+
+}
+.galeria img:hover{
+    border-radius: 0rem;
+    transition: 600ms;
+}
+.galeria h2 {
+    font-size: 10rem;
+    font-family: 'Island Moments', cursive;
+    font-weight: 300;
+    text-align: center;
+    padding: 1rem 0rem 2rem 0rem;
+}
+
+.historia{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+    align-items: center;
+    height: 55.2rem;
+    border-bottom: 2px solid black;
+}
+.historia-foto img{
+    width: 100%;
+    height: 55rem;
+    object-fit: cover;
+    border-top: 2px solid black;
+}   
+.historia-foto{
+    grid-column-start: 1;
+    grid-column-end:5;
+    grid-row-start:1 ;
+    grid-row-end: 2;
+}
+.historia-palabras{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:1 ;
+    grid-row-end: 2;
+}
+.historia-palabras p {
+    width: 70%;
+    font-size: 2rem;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 600;
+    padding-left: 8rem;
+}
+.redesCostado{
+    position: fixed;
+    top: 40rem;
+    left: 0.5rem;
+}
+.redesCostado img{
+    width: 4rem;
+    height: 4rem;
+}
+.redesCostado li{
+    /* padding: 1.5rem 0rem 1.5rem 0rem */
+    /* margin: 20px; */
+    margin-top: 10px;
+    border-radius: 50%;
+    background-color: #FBE6D4; 
+    box-shadow: 0px 5px 10px rgb(0, 0, .35);
+}
+.redesCostado img{
+    margin: 10px;
+    border-radius: 25%;
+}
+.redesCostado a img:hover{
+    transform: scale(1.2);
+}
+.footer{
+    display: flex;
+    background-color: #FFA931;
+    justify-content: space-between;
+    z-index: 999;
+}
+.footer-class{
+    font-family: 'PT Sans', sans-serif;
+}
+.checkbox2 ,.fl{
+    display: none;
+}
+.footer-class ul{
+    display: flex;
+    flex-direction: column  ;
+}
+.footer-class img{  
+    width: 3rem;
+}
+.footer-class h3{
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+.footer-class li{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.footer-horarios{
+    font-family: 'PT Sans', sans-serif;
+}
+
+.footer-horarios h3{
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+.footer-horarios p{
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 3.5rem;
+    text-align: center;
+}
+.footer-ubicacion {
+    font-family: 'PT Sans', sans-serif;
+}
+.footer-ubicacion h3{
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+.footer-ubicacion p{
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 3.5rem;
+    text-align: center;
+}
+.footer-img{
+    display: flex;
+}
+.footer-img img{
+    width: 17.1rem;
+}
+.main-ubicacion{
+    height: 85.5rem;
+    background-image: url(../assets/img/fotoubicacion.jpg);
+    border-bottom: 2px solid black;
+}
+.ubicacion{
+    text-align: center;
+    padding-top: 15rem; 
+}
+.ubicacion iframe{
+    width: 55rem;
+    height: 55rem;
+    border-radius: 60px;
+    object-fit: contain;
+}
+.pedidos{
+    padding-left:6rem;
+}
+.pedidos h2{
+    font-family: 'Island Moments', cursive; 
+    font-size: 10rem;
+}
+.pedidos li{
+    padding-bottom: 3rem;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.6rem;
+}
+.pedidos h3{
+    font-size: 3rem;
+}
+.pedidos img{
+    width: 4rem;
+}
+.pedidos li{
+    list-style: none;
+}
+.pedidos-enviar {
+    background-color: #B9AC92;
+    padding: 1rem 4rem;
+    border: 5px groove #FECB89;
+}  
+
+.recetas1 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    font-family: 'PT Sans', sans-serif;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+} 
+.recetas-nombres{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.recetas-produccion {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.recetas-img img{
+    display: none;
+
+}
+.recetas-videos{
+    grid-column-start: 3;
+    grid-column-end:4 ;
+    grid-row-start:1 ;
+    grid-row-end:3 ;
+
+}
+.recetas-nombres h2{
+    font-size: 4rem;
+    font-family: 'Island Moments', cursive; 
+    text-align: center;
+}
+.recetas-nombres h3{
+    font-size: 3rem;
+    font-family: 'Island Moments', cursive; 
+    text-align: center;
+    text-decoration: underline 1px;
+}
+.recetas-nombres ul{
+    font-size: 1.6rem;
+    text-align: center;
+}
+.recetas-nombres ol{
+    font-size: 1.6rem;
+    text-align: center;
+
+}
+.recetas-produccion p{
+    font-size: 1.6rem;
+}
+.recetas-videos iframe{
+    width: 35rem;
+    height: 30rem;
+    border-radius: 20px;
+}
+.pastas-hamburguesa {
+    display: none;
+}
+.pastas h4{
+    font-family: 'Island Moments', cursive; 
+    text-align: center;
+    font-size: 10rem;
+}
+
+.pastas-fotos ul{
+    display: flex;
+    justify-content: space-around;
+}
+.pastas-pre li{
+    width: 20rem;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.6rem;
+    padding-top:0.5rem ;
+    padding-bottom: 0.5rem;
+}
+
+.pastas-fotos img{
+    width: 20rem;
+    height: 20rem;
+}
+.pastas-carrito li{
+    width: 20rem;
+    text-align: center;
+}
+.pastas-carrito input{
+    margin-top: 1rem;
+
+}
+.enviar{
+    margin-bottom: 2rem;
+}
+.carrito-pastas{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.carrito-pastas img{
+    width: 7rem;
+}
+
+@media (max-width:1247px) {
+    .logoHora{
+    height: 60.7rem; 
+    }
+    .ruleta-fotos img{
+    height: 60.5rem;
+    }
+}
+@media (max-width:1024px) {
+    .header-nav ul{
+    justify-content: space-between;
+    padding:0rem 0.5rem 0rem 0.5rem; 
+    }
+    .logoHora{
+    height: 50.7rem; 
+    }
+    .ruleta-fotos img{
+    height: 50.5rem;
+    }
+    .galeria img {
+        width:19rem ;
+        height: 19rem;
+    }
+    .historia {
+        height: 40.2rem;
+    }
+    .historia p{
+        font-size: 1.6rem;
+    }
+    .historia-foto img {
+        height: 40rem;
+    }
+    .redesCostado img {
+        width: 3rem;
+        height: 3rem;
+    }
+    .recetas-nombres h2{
+        font-size: 4rem;
+    }
+    .recetas-nombres h3{
+        font-size: 3rem ;
+    }
+    .recetas-nombres li {
+        font-size: 1.4rem;
+    }
+    .recetas-produccion p{
+        font-size: 1.4rem;
+    }
+    .recetas-videos iframe { 
+        width: 30rem;
+        height: 25rem;
+    }
+    .pastas h4 { 
+        font-size: 7rem;
+    }
+    
+    .pastas-fotos img {
+        width: 15rem;
+        height: 15rem;
+    }
+    .pastas-pre li {
+        font-size: 1.4rem;
+        width:15rem ;
+    }
+    .pastas-carrito input { 
+        width: 10rem;
+    }
+    }
+    @media (max-width:937px) {
+    .footer-class ul {
+        width: 20rem;
+    }
+    .eslogan h2 {
+        font-size: 10rem;
+    }
+    }
+    @media (max-width:768px) {
+        header{
+            background-color: #FBE6D4;
+            border-bottom: 2px solid black;
+            font-family: 'Island Moments', cursive;
+            position: static;
+            top: 0;
+            z-index: auto;
+            display: auto;
+        }
+        .header-ul img{
+            display: none;
+        }
+        .header-nav{
+            height: 6rem;
+            padding: 10px 12px;
+            position: relative;
+        }
+        .checkbox, .icons {
+            width: 5rem;
+            height: 5rem;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            cursor: pointer;
+            
+        }
+        .icons {
+            pointer-events: none;
+            font-size: 5rem;
+        }
+        .checkbox {
+            display: block;
+            opacity:0 ; 
+        }
+        .open {
+            display: block;
+        } 
+        .checkbox:checked~ .open {
+            display: none;
+        }
+        .checkbox:checked~.close{
+            display: block;
+        }
+        .header-ul{
+            display:flex ;
+            flex-direction: column;
+            background-color: #fbe6d4;
+            justify-content: space-around;
+            width: 100%;
+            position: absolute; 
+            z-index: -1;
+            top: -450px;
+            right: 0px;
+            transition: 200ms;
+        }
+        .header-ul li a {
+            text-align: center;
+            border-bottom: 1px solid rgba(26, 25, 25, 0.589) ;
+            display: block;
+            padding: 3rem 2rem;
+        }
+        .checkbox:checked~ .header-ul {
+            top:6.2rem;
+            z-index: 999;
+        }
+        .header-inicio h1{
+            display: none;
+        }
+        .header-inicio p{ 
+            display: block;
+        }
+        .header-nav{
+            display: flex;
+            align-content: center;
+        }
+        .header-nav h3 { 
+            display: flex;
+            font-size: 6rem;
+            align-items: center;
+            letter-spacing: 0.7rem;
+            word-spacing: 1rem;
+        }
+        .logoHora { 
+            height: 48rem;
+        }
+        .ruleta-fotos img {
+            height: 47.8rem;
+        }
+        .horarios p {
+            font-size: 1.6rem;
+        }
+        .logo{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start:1 ;
+            grid-row-end: 5;
+            padding-top: 7.5rem;
+        }
+        .galeria{
+            width: 100%;
+            display: grid;
+            grid-template: 
+            "eslogan eslogan" 
+            "galeria-fotos . galeria-fotos ."
+            "galeria-fotos .galeria-fotos ." 
+            ; 
+        }
+        .eslogan h2 {
+            font-size: 6.5rem;
+            font-weight: 600;
+        }
+        .historia-palabras p {
+            width: 100%;
+            font-size: 1.6rem;
+            font-family: 'PT Sans', sans-serif;
+            font-weight: 600;
+            padding-left: 7rem;
+        }
+        .galeria img{
+            width: 20rem;
+            height: 20rem;
+            text-align: center;
+            
+        }
+        .galeria-fotos {
+            padding: 0rem;
+        }
+        .galeria-fotos ul{
+            display: grid;
+            grid-template: 
+            "row1 row2"27rem
+            "row3 row4"27rem ;
+        }
+        .galeria p {
+            font-size: 2.2rem;
+
+        }
+        .galeria-fotos2 ul{
+            display: grid;
+            grid-template: 
+            "row1 row2"25rem
+            "row3 row4"25rem ;
+            padding: 0rem;
+        }
+        .redes-pastas{
+            display: none;
+        }
+        .pastas-fotos img{
+            width: 12.5rem;
+            height: 12.5rem;
+        }
+        .recetas-videos {
+            display: none;
+        }
+        .recetas1 {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 1fr;
+            padding-top: 0rem;
+        }
+        .recetas-nombres h2 {
+            font-size: 5rem;
+        }
+
+        .recetas-nombres li{
+            font-size: 1.6rem;
+        }
+
+        .recetas-produccion {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            align-self: end;
+        }
+        .recetas-img{
+            display: grid;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            padding-top: 1rem;
+            padding-right: 0.5rem;
+            padding-left: 0.8rem;
+            padding-bottom: 1.5rem;
+        }
+        .recetas-img img {
+        display: block;
+            width: 100%;
+            height: 15rem;
+            object-fit: cover;
+            box-shadow: 0px 5px 10px rgb(0, 0, .35);
+            border-radius: 50%;
+        }
+
+        .recetas-produccion p { 
+            font-size: 1.7rem;
+            font-weight: 600;
+            text-align: center;
+        }
+        .footer-img {
+            display: none;
+        }
+        .footer p{
+            line-height: 2rem;
+            font-size: 1.6rem;
+            padding: 0rem;
+        }
+        .main-ubicacion {
+            background-image: none;
+            background-color: #FECB89;
+        }
+        .ubicacion iframe{
+            width: 100%;
+            height: 85.3rem;
+            border-radius: 0%;
+        }
+        .ubicacion {
+            padding: 0rem;
+        }
+        .pastas{
+            position: relative;
+            height: 15rem;
+        }
+        .checkbox2,.fl{
+            display: block;
+        }
+        .checkbox2,.fl{
+            width: 10rem;
+            height: 10rem;
+            position: absolute;
+            top:10rem;
+            left: 50%;
+            transform: translate(-50%, -50%);   
+            cursor: pointer;
+        }
+        .fl{
+            text-align: center;
+            pointer-events: none;
+            
+        }
+        .checkbox2 {
+            opacity: 0;
+        }
+        .fl-arriba{
+            display: none;
+        }
+        .checkbox2:checked ~ .fl-abajo{
+            display: none;
+        }
+        .checkbox2:checked ~ .fl-arriba{
+            display: block;
+        }
+        .pastas-fotos {
+            width: 100%;
+            height: 100rem;
+            background-color: #FECB89;
+        }
+        .pastas-fotos{
+            display: none;
+        }
+        .checkbox2:checked ~.pastas-fotos{
+            display: block;
+        }
+    }
+    @media (max-width:425px) {
+
+        .header-all h3{
+            font-size: 5rem;
+        }
+        aside {
+            display: none;
+        }
+        .logoHora { 
+            height: 55rem;
+        }
+        .ruleta-fotos img {
+            height: 54.8rem;
+        }
+        .horarios p {
+            font-size: 2.5rem;
+            text-align: center;        }
+        .logo{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            padding: 0;
+        }
+        .logo img{
+        width: 85%;
+        }
+        .horarios {
+            width: 100%;
+            grid-column-start:2;
+            grid-column-end: 4;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+        .galeria{
+            width: 100%;
+            display: grid;
+            grid-template: 
+            "eslogan eslogan" 
+            "galeria-fotos "
+            "galeria-fotos " 
+            ; 
+        }
+        .eslogan h2 {
+            font-size: 6.5rem;
+            font-weight: 600;
+        }
+        .historia-palabras p {
+            width: 100%;
+            font-size: 1.6rem;
+            font-family: 'PT Sans', sans-serif;
+            font-weight: 600;
+            padding-left: 7rem;
+        }
+        .galeria img{
+            width: 100%;
+            height:55rem;
+            text-align: center;
+            border-radius: 0;
+            border: none;
+            transition: 0ms;
+            padding-top:1.8rem ;
+        }
+        .galeria-fotos {
+            padding: 0rem;
+        }
+        .galeria-fotos ul{
+            display: grid;
+            grid-template: 
+            "row1 "
+            "row2"
+            "row3 "
+            "row4"
+            ;
+        }
+        .galeria p {
+            text-decoration: dashed;
+            font-size: 3rem;
+        }
+        .galeria-fotos2{
+            padding: 0rem 0rem 2rem 0rem;
+        }
+        .galeria-fotos2 ul{
+            display: grid;
+            grid-template: 
+            "row1 "
+            "row2"
+            "row3 "
+            "row4"
+            ;
+        }  
+        .historia p{
+            padding-left: 0rem;
+        }
+        .footer{
+            flex-direction: column;
+        }
+        .footer-class ul{
+            width: 100%;
+            padding-bottom: 1.5rem;
+        }
+        .footer-class li {
+            padding-top:2rem;
+        }
+        .footer-class {
+            text-align: center;
+        }
+        .footer-horarios{
+            padding-bottom: 1.5rem;
+        }
+    }
