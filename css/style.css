@@ -47,6 +47,7 @@ html {
 
 .footer {
   display: flex;
+  flex-direction: row;
   background-color: #FFA931;
   justify-content: space-between;
   z-index: 999;
@@ -95,6 +96,7 @@ html {
       width: 17.1rem; }
   @media (max-width: 768px) {
     .footer {
+      display: flex;
       flex-direction: column; }
       .footer .footer-class img {
         display: none; }
@@ -226,6 +228,7 @@ header {
       padding: 1rem 0rem 2.5rem 0rem; }
       .main-index .galeria .galeria-fotos2 ul {
         display: flex;
+        flex-direction: row;
         justify-content: space-around; }
       .main-index .galeria .galeria-fotos2 img {
         width: 25rem;
@@ -276,6 +279,7 @@ header {
     display: none; }
   .pastas .pastas-fotos ul {
     display: flex;
+    flex-direction: row;
     justify-content: space-around; }
   .pastas .pastas-fotos img {
     width: 20rem;
@@ -513,9 +517,11 @@ header {
       display: block; }
     header .header-nav {
       display: flex;
+      flex-direction: row;
       align-content: center; }
     header .header-nav h3 {
       display: flex;
+      flex-direction: row;
       font-size: 6rem;
       align-items: center;
       letter-spacing: 0.7rem;

@@ -100,7 +100,7 @@
             align-self: center;
             padding: 1rem 0rem 2.5rem 0rem;
             ul{
-                display:flex;
+                @include flex (row) ;
                 justify-content:space-around ;
             }
             img{

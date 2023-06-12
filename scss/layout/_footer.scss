@@ -1,5 +1,5 @@
 .footer{
-    display: flex;
+    @include flex (row) ;
     background-color: #FFA931;
     justify-content: space-between;
     z-index: 999;
@@ -7,8 +7,7 @@
     .footer-class{
         font-family: $font-pt-sans;
         ul{
-            display: flex;
-            flex-direction: column  ;
+            @include flex (column) ;
         }
         img{
             width: 3rem;
@@ -65,7 +64,7 @@
             }
         }
         @media (max-width: 768px) {
-            flex-direction: column;
+            @include flex (column) ;
             
             .footer-class{
                 img{
@@ -79,8 +78,7 @@
                 }
             }
             .footer-horarios{
-                display: flex;
-                flex-direction: column;
+                @include flex (column) ;
                 justify-content: center;
                 align-items: center;
             }

@@ -10,7 +10,7 @@
     }
     .pastas-fotos{
         ul{
-            display: flex;
+            @include flex (row) ;
             justify-content: space-around;
         }
         img{
