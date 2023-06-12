@@ -1,3 +1,19 @@
-header{
-    background-color: black;
-}
+@import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./utilities/funciones";
+
+@import "./base/reset";
+@import "./base/tipografia";
+
+@import "./components/bootstrap";
+@import "./components/botones";
+
+@import "./layout/aside";
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/main-index";
+@import "./layout/main-pastas";
+@import "./layout/main-pedidos";
+@import "./layout/main-recetas";
+@import "./layout/main-ubicacion";
+@import "./layout/media768";

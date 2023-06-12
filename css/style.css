@@ -1,2 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+ol {
+  list-style: none; }
+
+ul {
+  list-style: none; }
+
+html {
+  font-size: 62.5%; }
+
+.checkbox, .icons {
+  display: none; }
+
+.header-nav h3 {
+  display: none; }
+
+.header-inicio p {
+  display: none; }
+
+.checkbox2, .fl {
+  display: none; }
+
+.redesCostado {
+  position: fixed;
+  top: 40rem;
+  left: 0.5rem; }
+  .redesCostado img {
+    width: 4rem;
+    height: 4rem;
+    margin: 10px;
+    border-radius: 25%; }
+  .redesCostado img:hover {
+    transform: scale(1.2); }
+  .redesCostado li {
+    margin-top: 10px;
+    border-radius: 50%;
+    background-color: #FBE6D4;
+    box-shadow: 0px 5px 10px black; }
+
+.footer {
+  display: flex;
+  background-color: #FFA931;
+  justify-content: space-between;
+  z-index: 999; }
+  .footer .footer-class {
+    font-family: "PT Sans", sans-serif; }
+    .footer .footer-class ul {
+      display: flex;
+      flex-direction: column; }
+    .footer .footer-class img {
+      width: 3rem; }
+    .footer .footer-class h3 {
+      font-size: 2.5rem;
+      text-align: center;
+      padding-top: 0.5rem; }
+    .footer .footer-class li {
+      font-size: 1.6rem;
+      font-weight: 600; }
+  .footer .footer-horarios {
+    font-family: "PT Sans", sans-serif h3;
+      font-family-font-size: 2.5rem;
+      font-family-text-align: center;
+      font-family-padding-top: 0.5rem;
+      font-family-padding-bottom: 1rem; }
+    .footer .footer-horarios p {
+      font-size: 2.5rem;
+      text-align: center;
+      padding-top: 0.5rem;
+      padding-bottom: 1rem; }
+  .footer .footer-ubicacion {
+    font-family: "PT Sans", sans-serif; }
+    .footer .footer-ubicacion h3 {
+      font-size: 2.5rem;
+      text-align: center;
+      padding-top: 0.5rem;
+      padding-bottom: 1rem; }
+    .footer .footer-ubicacion p {
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 3.5rem;
+      text-align: center; }
+  .footer .footer-img {
+    display: flex; }
+    .footer .footer-img img {
+      width: 17.1rem; }
+
 header {
-  background-color: black; }
+  background-color: #FBE6D4;
+  font-family: "Island Moments", cursive;
+  border-bottom: 2px solid black;
+  position: sticky;
+  top: 0;
+  z-index: 999; }
+  header h1 {
+    font-size: 10rem;
+    font-weight: 600;
+    word-spacing: 2rem; }
+  header ul {
+    display: flex;
+    justify-content: space-around; }
+    header ul img {
+      width: 7rem;
+      padding-top: 1rem; }
+    header ul p {
+      font-size: 3rem;
+      font-weight: 600;
+      text-align: center; }
+    header ul li :hover {
+      transform: scale(1.1); }
+
+.main-index {
+  background-color: #FECB89; }
+  .main-index article {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    height: 85.7rem;
+    border-bottom: 2px solid black; }
+    .main-index article .ruleta-fotos {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 5; }
+      .main-index article .ruleta-fotos img {
+        width: 100%;
+        height: 85.5rem;
+        filter: opacity(0.9);
+        object-fit: cover; }
+    .main-index article .logo {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 5;
+      z-index: 1; }
+      .main-index article .logo img {
+        width: 95%; }
+    .main-index article .horarios {
+      width: 100%;
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 4;
+      grid-row-end: 5;
+      z-index: 994; }
+      .main-index article .horarios p {
+        font-family: "PT Sans", sans-serif;
+        font-size: 2.7rem;
+        font-weight: 600; }
+  .main-index .galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 15rem repeat(2, 1fr); }
+    .main-index .galeria p {
+      text-align: center;
+      font-family: "PT Sans", sans-serif;
+      font-size: 1.6rem;
+      font-weight: 600;
+      padding-top: 2rem; }
+    .main-index .galeria .eslogan {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 2; }
+      .main-index .galeria .eslogan h2 {
+        font-size: 10rem;
+        font-family: 'Island Moments', cursive;
+        font-weight: 300;
+        text-align: center;
+        padding: 1rem 0rem 2rem 0rem; }
+    .main-index .galeria .galeria-fotos {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      align-self: center;
+      padding: 1rem 0rem 2.5rem 0rem; }
+      .main-index .galeria .galeria-fotos ul {
+        display: flex;
+        justify-content: space-around; }
+      .main-index .galeria .galeria-fotos img {
+        width: 25rem;
+        height: 25rem;
+        object-fit: cover;
+        border-radius: 12rem;
+        border: solid 0.3rem black;
+        transition: 600ms; }
+      .main-index .galeria .galeria-fotos img:hover {
+        border-radius: 0rem;
+        transition: 600ms; }
+    .main-index .galeria .galeria-fotos2 {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      align-self: center;
+      padding: 1rem 0rem 2.5rem 0rem; }
+      .main-index .galeria .galeria-fotos2 ul {
+        display: flex;
+        justify-content: space-around; }
+      .main-index .galeria .galeria-fotos2 img {
+        width: 25rem;
+        height: 25rem;
+        object-fit: cover;
+        border-radius: 12rem;
+        border: solid 0.3rem black;
+        transition: 600ms; }
+      .main-index .galeria .galeria-fotos2:hover {
+        border-radius: 0rem;
+        transition: 600ms; }
+  .main-index .historia {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    align-items: center;
+    height: 55.2rem;
+    border-bottom: 2px solid black; }
+    .main-index .historia .historia-foto {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 2; }
+      .main-index .historia .historia-foto img {
+        width: 100%;
+        height: 55rem;
+        object-fit: cover;
+        border-top: 2px solid black; }
+    .main-index .historia .historia-palabras {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2; }
+      .main-index .historia .historia-palabras p {
+        width: 70%;
+        font-size: 2rem;
+        font-family: "PT Sans", sans-serif;
+        font-weight: 600;
+        padding-left: 8rem; }

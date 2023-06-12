@@ -1,0 +1,31 @@
+
+header{
+background-color: $background-header;
+font-family: $tipografia-island ;
+border-bottom: 2px solid black;
+position: sticky ;
+top: 0;
+z-index: 999;
+h1 {
+    font-size:10rem;
+    font-weight: 600;
+    word-spacing: 2rem;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    img{
+        width:7rem; 
+        padding-top: 1rem;
+    }
+    p{
+        font-size:3rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    li :hover{
+        transform: scale(1.1);
+        
+    }
+}
+}

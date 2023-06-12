@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ol{
+    list-style: none;
+}
+ul{
+    list-style: none;
+}
+html{
+    font-size: 62.5%;
+}
+
+.checkbox , .icons {
+    display: none;
+}
+.header-nav h3 {
+    display: none;
+}
+.header-inicio p{
+    display: none;
+}
+.checkbox2 ,.fl{
+    display: none;
+}

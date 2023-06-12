@@ -1,0 +1,154 @@
+.main-index{
+    background-color: $background-main;
+    article{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        text-align: center;
+        height: 85.7rem; 
+        border-bottom:2px solid black ;
+        .ruleta-fotos{    
+            grid-column-start: 1;
+            grid-column-end: 5 ;
+            grid-row-start: 1;
+            grid-row-end: 5;
+            img{
+                width: 100%;
+                height: 85.5rem;
+                filter: opacity(0.9);
+                object-fit: cover;
+            }
+        }
+        .logo {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start:1;
+            grid-row-end: 5;
+            z-index: 1;
+            img{    
+                width: 95%;
+            }
+        }
+        .horarios{
+            width: 100%;
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 4;
+            grid-row-end: 5;
+            z-index: 994; 
+            p{
+                font-family:$font-pt-sans;
+                font-size: 2.7rem;
+                font-weight: 600;
+            }
+        }
+    }
+    .galeria{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 15rem repeat(2,1fr);
+        p{
+            text-align: center;
+            font-family: $font-pt-sans;
+            font-size: 1.6rem;
+            font-weight: 600;
+            padding-top: 2rem;   
+        }
+        .eslogan{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            h2{
+                font-size: 10rem;
+                font-family: 'Island Moments', cursive;
+                font-weight: 300;
+                text-align: center;
+                padding: 1rem 0rem 2rem 0rem;
+            }
+        }
+        .galeria-fotos {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            align-self: center;
+            padding: 1rem 0rem 2.5rem 0rem;
+            ul{    
+                display:flex;
+                justify-content:space-around ;
+            }
+            img{
+                width: 25rem;
+                height: 25rem;
+                object-fit: cover;
+                border-radius: 12rem;
+                border: solid 0.3rem black;
+                transition: 600ms;
+            }
+            img:hover{
+                border-radius: 0rem;
+                transition: 600ms;
+            }
+        }
+        .galeria-fotos2 {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            align-self: center;
+            padding: 1rem 0rem 2.5rem 0rem;
+            ul{
+                display:flex;
+                justify-content:space-around ;
+            }
+            img{
+                width: 25rem;
+                height: 25rem;
+                object-fit: cover;
+                border-radius: 12rem;
+                border: solid 0.3rem black;
+                transition: 600ms;
+            }
+            &:hover{
+                border-radius: 0rem;
+                transition: 600ms;
+            }
+        }
+    }
+    .historia{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(1,1fr);
+        align-items: center;
+        height: 55.2rem;
+        border-bottom: 2px solid black;
+
+        .historia-foto{
+            grid-column-start: 1;
+            grid-column-end:5;
+            grid-row-start:1 ;
+            grid-row-end: 2;
+            img{
+                width: 100%;
+                height: 55rem;
+                object-fit: cover;
+                border-top: 2px solid black;
+            }
+        }
+        .historia-palabras{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start:1 ;
+            grid-row-end: 2;
+            p{
+                width: 70%;
+                font-size: 2rem;
+                font-family: $font-pt-sans;
+                font-weight: 600;
+                padding-left: 8rem;
+            }
+        }
+    }
+}
