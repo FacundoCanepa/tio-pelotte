@@ -244,3 +244,35 @@ header {
         font-family: "PT Sans", sans-serif;
         font-weight: 600;
         padding-left: 8rem; }
+
+.main-ubicacion {
+  height: 85.5rem;
+  background-image: url(../assets/img/fotoubicacion.jpg);
+  border-bottom: 2px solid black; }
+  .main-ubicacion .ubicacion {
+    text-align: center;
+    padding-top: 15rem; }
+    .main-ubicacion .ubicacion iframe {
+      width: 55rem;
+      height: 55rem;
+      border-radius: 60px;
+      object-fit: contain; }
+  .main-ubicacion .pedidos {
+    padding-left: 6rem; }
+    .main-ubicacion .pedidos h2 {
+      font-family: 'Island Moments', cursive;
+      font-size: 10rem; }
+    .main-ubicacion .pedidos li {
+      padding-bottom: 3rem;
+      font-family: 'PT Sans', sans-serif;
+      font-size: 1.6rem; }
+    .main-ubicacion .pedidos h3 {
+      font-size: 3rem; }
+    .main-ubicacion .pedidos img {
+      width: 4rem; }
+    .main-ubicacion .pedidos li {
+      list-style: none; }
+  .main-ubicacion .pedidos-enviar {
+    background-color: #B9AC92;
+    padding: 1rem 4rem;
+    border: 5px groove #FECB89; }
