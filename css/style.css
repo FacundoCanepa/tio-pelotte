@@ -245,6 +245,41 @@ header {
         font-weight: 600;
         padding-left: 8rem; }
 
+.pastas {
+  background-color: #FECB89; }
+  .pastas h4 {
+    font-family: 'Island Moments', cursive;
+    text-align: center;
+    font-size: 10rem; }
+  .pastas .pastas-hamburguesa {
+    display: none; }
+  .pastas .pastas-fotos ul {
+    display: flex;
+    justify-content: space-around; }
+  .pastas .pastas-fotos img {
+    width: 20rem;
+    height: 20rem; }
+  .pastas .pastas-pre li {
+    width: 20rem;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.6rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; }
+  .pastas .pastas-carrito li {
+    width: 20rem;
+    text-align: center; }
+  .pastas .pastas-carrito input {
+    margin-top: 1rem; }
+  .pastas .enviar {
+    margin-bottom: 2rem; }
+  .pastas .carrito-pastas {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; }
+    .pastas .carrito-pastas img {
+      width: 7rem; }
+
 .pedidos {
   padding-left: 7rem;
   background-color: #FECB89; }

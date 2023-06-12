@@ -1,0 +1,51 @@
+.pastas{
+    background-color: $background-main;
+    h4{
+        font-family: 'Island Moments', cursive; 
+        text-align: center;
+        font-size: 10rem;
+    }
+    .pastas-hamburguesa {
+        display: none;
+    }
+    .pastas-fotos{
+        ul{
+            display: flex;
+            justify-content: space-around;
+        }
+        img{
+            width: 20rem;
+            height: 20rem;
+        }
+    }
+    .pastas-pre{
+        li{
+            width: 20rem;
+            text-align: center;
+            font-family: 'PT Sans', sans-serif;
+            font-size: 1.6rem;
+            padding-top:0.5rem ;
+            padding-bottom: 0.5rem;
+        }
+    }
+    .pastas-carrito{
+        li{
+            width: 20rem;
+            text-align: center;
+        }
+        input{
+            margin-top: 1rem;
+        }
+    }
+    .enviar{
+        margin-bottom: 2rem;
+    }
+    .carrito-pastas{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        img{
+            width: 7rem;
+        }
+    }
+}
