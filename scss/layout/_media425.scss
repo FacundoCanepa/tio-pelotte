@@ -11,12 +11,15 @@
     aside {
         display: none;
     }
+
     .main-index{
+
         article{
-            height: 55rem;  
+            grid-template-rows: repeat(4,15rem);
+            height: 65rem;
             .ruleta-fotos{
                 img {
-                    height: 54.8rem;
+                    height: 64.8rem;
                 }
             }
             .horarios{
@@ -26,80 +29,101 @@
                 grid-row-start: 4;
                 grid-row-end: 5;
                 p {
-                    font-size: 2.5rem;
-                    text-align: center;        
+                    font-size: 2rem;
+                    text-align: center;      
                 }
             }
             .logo{
                 grid-column-start: 1;
                 grid-column-end: 5;
                 grid-row-start: 1;
-                grid-row-end: 3;
+                grid-row-end: 5;
                 padding: 0;
                 img{
-                    width: 85%;
+                    width: 100%;
+                    height: 75%;
                     }
             }
         }
-        .galeria{
-            width: 100%;
-            display: grid;
-            grid-template: 
-            "eslogan eslogan" 
-            "galeria-fotos "
-            "galeria-fotos " 
-            ; 
-            img{
-                width: 100%;
-                height:55rem;
-                text-align: center;
-                border-radius: 0;
-                border: none;
-                transition: 0ms;
-                padding-top:1.8rem ;
+    
+    .galeria{
+        width: 100%;
+        display: grid;
+        grid-template: 
+        "eslogan eslogan" 
+        "galeria-fotos "
+        "galeria-fotos " 
+        ; 
+
+        .eslogan {
+            h2 {
+                font-size: 6.5rem;
+                font-weight: 600;
             }
-            .galeria-fotos {
-                padding: 0rem;
-                ul{
-                    display: grid;
-                    grid-template: 
-                    "row1 "
-                    "row2"
-                    "row3 "
-                    "row4"
-                    ;
+        }
+        .galeria-fotos {
+            padding: 0rem;
+            ul{
+                display: grid;
+                grid-template: 
+                "row1 "
+                "row2"
+                "row3 "
+                "row4"
+                ;
+                li{
+                    img{
+                        width: 100%;
+                        height:55rem;
+                        text-align: center;
+                        border-radius: 0;
+                        border: none;
+                        transition: 0ms;
+                        padding-top:1.8rem ;
+                    }
                 }
             }
-            .galeria-fotos2{
-                padding: 0rem 0rem 2rem 0rem;
-                ul{
-                    display: grid;
-                    grid-template: 
-                    "row1 "
-                    "row2"
-                    "row3 "
-                    "row4"
-                    ;
-            }
-            .eslogan{
-                h2 {
-                    font-size: 6.5rem;
-                    font-weight: 600;
+        }
+        .galeria-fotos2 {
+            padding: 0rem;
+            ul{
+                display: grid;
+                grid-template: 
+                "row1 "
+                "row2"
+                "row3 "
+                "row4"
+                ;
+                li{
+                    img{
+                        width: 100%;
+                        height:55rem;
+                        text-align: center;
+                        border-radius: 0;
+                        border: none;
+                        transition: 0ms;
+                        padding-top:1.8rem ;
+                    }
                 }
             }
+        }
+        p {
+            text-decoration: dashed;
+            font-size: 3rem;
         }
     }
     .historia{
-        
         .historia-palabras{
         p {
+            padding-left: 0rem;
             width: 100%;
-            font-size: 0.5rem;
+            font-size: 1.6rem;
             font-family: 'PT Sans', sans-serif;
             font-weight: 600;
-            padding-left: 0rem;
+            padding-left: 1rem;
         }
     }
     }
+}  
 }
-}
+
