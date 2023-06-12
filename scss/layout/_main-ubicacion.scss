@@ -12,30 +12,4 @@
             object-fit: contain;
         }
     }
-    .pedidos{
-        padding-left:6rem;
-        h2{
-            font-family: 'Island Moments', cursive; 
-            font-size: 10rem;
-        }
-        li{
-            padding-bottom: 3rem;
-            font-family: 'PT Sans', sans-serif;
-            font-size: 1.6rem;
-        }
-        h3{
-            font-size: 3rem;
-        }
-        img{
-            width: 4rem;
-        }
-        li{
-            list-style: none;
-        }
-    }
-    .pedidos-enviar {
-        background-color: #B9AC92;
-        padding: 1rem 4rem;
-        border: 5px groove #FECB89;
-    }  
 }

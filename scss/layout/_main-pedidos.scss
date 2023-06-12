@@ -1,0 +1,27 @@
+.pedidos{
+    padding-left:7rem;
+    background-color: $background-main;
+    h2{
+        font-family:$tipografia-island; 
+        font-size: 10rem;
+    }
+    li{
+        padding-bottom: 3rem;
+        font-family: $font-pt-sans;
+        font-size: 1.6rem;
+    }
+    h3{
+        font-size: 3rem;
+    }
+    img{
+        width: 4rem;
+    }
+    li{
+        list-style: none;
+    }
+}
+.pedidos-enviar {
+    background-color: #B9AC92;
+    padding: 1rem 4rem;
+    border: 5px groove #FECB89;
+}  

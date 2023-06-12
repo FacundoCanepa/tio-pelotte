@@ -1,0 +1,62 @@
+.recetas{
+    background-color: $background-main;
+    .recetas1 {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        font-family: 'PT Sans', sans-serif;
+        align-items: center;
+        justify-items: center;
+        padding-bottom: 3rem;
+        padding-top: 1rem;
+        .recetas-nombres{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            h2{
+                font-size: 4rem;
+                font-family: 'Island Moments', cursive; 
+                text-align: center;
+            }
+            h3{
+                font-size: 3rem;
+                font-family: 'Island Moments', cursive; 
+                text-align: center;
+                text-decoration: underline 1px;
+            }
+            ul{
+                font-size: 1.6rem;
+                text-align: center;
+            }
+            ol{
+                font-size: 1.6rem;
+                text-align: center;
+            }
+        }
+        .recetas-produccion {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            p{
+                font-size: 1.6rem;
+                word-spacing: 0.7rem;
+            }
+        }
+        .recetas-img img{
+            display: none;
+        }
+        .recetas-videos{
+            grid-column-start: 3;
+            grid-column-end:4 ;
+            grid-row-start:1 ;
+            grid-row-end:3 ;
+            iframe {
+                width: 35rem;
+                height: 30rem;
+                border-radius: 20px;
+            }
+        }
+    } 
+}

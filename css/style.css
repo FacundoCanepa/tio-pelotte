@@ -245,6 +245,79 @@ header {
         font-weight: 600;
         padding-left: 8rem; }
 
+.pedidos {
+  padding-left: 7rem;
+  background-color: #FECB89; }
+  .pedidos h2 {
+    font-family: "Island Moments", cursive;
+    font-size: 10rem; }
+  .pedidos li {
+    padding-bottom: 3rem;
+    font-family: "PT Sans", sans-serif;
+    font-size: 1.6rem; }
+  .pedidos h3 {
+    font-size: 3rem; }
+  .pedidos img {
+    width: 4rem; }
+  .pedidos li {
+    list-style: none; }
+
+.pedidos-enviar {
+  background-color: #B9AC92;
+  padding: 1rem 4rem;
+  border: 5px groove #FECB89; }
+
+.recetas {
+  background-color: #FECB89; }
+  .recetas .recetas1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    font-family: 'PT Sans', sans-serif;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 3rem;
+    padding-top: 1rem; }
+    .recetas .recetas1 .recetas-nombres {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 3; }
+      .recetas .recetas1 .recetas-nombres h2 {
+        font-size: 4rem;
+        font-family: 'Island Moments', cursive;
+        text-align: center; }
+      .recetas .recetas1 .recetas-nombres h3 {
+        font-size: 3rem;
+        font-family: 'Island Moments', cursive;
+        text-align: center;
+        text-decoration: underline 1px; }
+      .recetas .recetas1 .recetas-nombres ul {
+        font-size: 1.6rem;
+        text-align: center; }
+      .recetas .recetas1 .recetas-nombres ol {
+        font-size: 1.6rem;
+        text-align: center; }
+    .recetas .recetas1 .recetas-produccion {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 3; }
+      .recetas .recetas1 .recetas-produccion p {
+        font-size: 1.6rem;
+        word-spacing: 0.7rem; }
+    .recetas .recetas1 .recetas-img img {
+      display: none; }
+    .recetas .recetas1 .recetas-videos {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 3; }
+      .recetas .recetas1 .recetas-videos iframe {
+        width: 35rem;
+        height: 30rem;
+        border-radius: 20px; }
+
 .main-ubicacion {
   height: 85.5rem;
   background-image: url(../assets/img/fotoubicacion.jpg);
@@ -257,22 +330,3 @@ header {
       height: 55rem;
       border-radius: 60px;
       object-fit: contain; }
-  .main-ubicacion .pedidos {
-    padding-left: 6rem; }
-    .main-ubicacion .pedidos h2 {
-      font-family: 'Island Moments', cursive;
-      font-size: 10rem; }
-    .main-ubicacion .pedidos li {
-      padding-bottom: 3rem;
-      font-family: 'PT Sans', sans-serif;
-      font-size: 1.6rem; }
-    .main-ubicacion .pedidos h3 {
-      font-size: 3rem; }
-    .main-ubicacion .pedidos img {
-      width: 4rem; }
-    .main-ubicacion .pedidos li {
-      list-style: none; }
-  .main-ubicacion .pedidos-enviar {
-    background-color: #B9AC92;
-    padding: 1rem 4rem;
-    border: 5px groove #FECB89; }
