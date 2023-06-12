@@ -1,0 +1,27 @@
+@media (max-width:1247px) {
+    .logo{
+        img{
+            height: 60.7rem; 
+        }
+
+    }
+    .ruleta-fotos {
+    img{
+        height: 60.5rem;
+    }
+    }
+    .footer{
+        .footer-horarios{
+            p{
+                width: 20rem;
+                font-size: 1.6rem;
+                font-weight: 600;
+            }
+        }
+        .footer-ubicacion{
+            p{
+                width: 20rem;
+            }
+        }
+    }
+}

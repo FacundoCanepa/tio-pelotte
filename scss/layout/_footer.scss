@@ -32,6 +32,7 @@
             padding-bottom: 1rem;
         }
         p{
+            font-family: $font-pt-sans;
             font-size: 2.5rem;
             text-align: center;
             padding-top: 0.5rem;
@@ -62,4 +63,33 @@
                 width: 17.1rem;
             }
         }
+        @media (max-width: 768px) {
+            flex-direction: column;
+            
+            .footer-class{
+                img{
+                    display: none;
+                }
+                ul{
+                    text-align: center;
+                    li{
+                        padding-top: 1rem;
+                    }
+                }
+            }
+            .footer-horarios{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .footer-ubicacion{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+              
+            }
+          }
+
     }

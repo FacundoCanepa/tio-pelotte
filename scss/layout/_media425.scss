@@ -1,0 +1,105 @@
+@media (max-width:425px) {
+    .header-all{
+        .header-main{
+            .header-nav{
+                h3{
+                    font-size: 5rem;
+                }
+            }
+        }
+    }
+    aside {
+        display: none;
+    }
+    .main-index{
+        article{
+            height: 55rem;  
+            .ruleta-fotos{
+                img {
+                    height: 54.8rem;
+                }
+            }
+            .horarios{
+                width: 100%;
+                grid-column-start:2;
+                grid-column-end: 4;
+                grid-row-start: 4;
+                grid-row-end: 5;
+                p {
+                    font-size: 2.5rem;
+                    text-align: center;        
+                }
+            }
+            .logo{
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                grid-row-end: 3;
+                padding: 0;
+                img{
+                    width: 85%;
+                    }
+            }
+        }
+        .galeria{
+            width: 100%;
+            display: grid;
+            grid-template: 
+            "eslogan eslogan" 
+            "galeria-fotos "
+            "galeria-fotos " 
+            ; 
+            img{
+                width: 100%;
+                height:55rem;
+                text-align: center;
+                border-radius: 0;
+                border: none;
+                transition: 0ms;
+                padding-top:1.8rem ;
+            }
+            .galeria-fotos {
+                padding: 0rem;
+                ul{
+                    display: grid;
+                    grid-template: 
+                    "row1 "
+                    "row2"
+                    "row3 "
+                    "row4"
+                    ;
+                }
+            }
+            .galeria-fotos2{
+                padding: 0rem 0rem 2rem 0rem;
+                ul{
+                    display: grid;
+                    grid-template: 
+                    "row1 "
+                    "row2"
+                    "row3 "
+                    "row4"
+                    ;
+            }
+            .eslogan{
+                h2 {
+                    font-size: 6.5rem;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .historia{
+        
+        .historia-palabras{
+        p {
+            width: 100%;
+            font-size: 0.5rem;
+            font-family: 'PT Sans', sans-serif;
+            font-weight: 600;
+            padding-left: 0rem;
+        }
+    }
+    }
+}
+}
